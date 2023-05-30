@@ -8,12 +8,6 @@ steps:
       - 'CLOUDSDK_COMPUTE_REGION=us-central1-f'
       - 'CLOUDSDK_COMPUTE_ZONE=us-central1-f'
       - 'CLOUDSDK_CONTAINER_CLUSTER=gke-public'
-    args: ['delete', '-f', 'nginx-deployment.yaml']
-  - name: 'gcr.io/cloud-builders/kubectl'
-    env:
-      - 'CLOUDSDK_COMPUTE_REGION=us-central1-f'
-      - 'CLOUDSDK_COMPUTE_ZONE=us-central1-f'
-      - 'CLOUDSDK_CONTAINER_CLUSTER=gke-public'
     args: ['apply', '-f', 'nginx-deployment.yaml']
   - name: 'gcr.io/cloud-builders/kubectl'
     env:
