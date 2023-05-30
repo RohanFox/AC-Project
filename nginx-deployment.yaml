@@ -14,8 +14,7 @@ spec:
     spec:
       containers:
         - name: nginx 
-          image: 
-            registry: gcr.io/dev-ops-388215/dockerfile:latest
+          image: gcr.io/dev-ops-388215/dockerfile:latest
           imagePullPolicy: Never
           ports:
             - containerPort: 80
