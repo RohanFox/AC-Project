@@ -1,8 +1,8 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/dev-ops-388215/Dockerfile', '.']
+    args: ['build', '-t', 'gcr.io/dev-ops-388215/dockerfile', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/dev-ops-388215/Dockerfile']
+    args: ['push', 'gcr.io/dev-ops-388215/dockerfile']
   - name: 'gcr.io/cloud-builders/kubectl'
     args: ['apply', '-f', 'deployment.yaml']
   - name: 'gcr.io/cloud-builders/kubectl'
