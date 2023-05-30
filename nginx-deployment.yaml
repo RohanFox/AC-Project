@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: nginx 
-          image: nginx
+          image: 
+            registry: gcr.io/dev-ops-388215/dockerfile:lates
           imagePullPolicy: Never
           ports:
             - containerPort: 80
